@@ -1,0 +1,19 @@
+
+p{
+    color: blue
+}
+
+.colorText {
+    color: brown;
+}
+
+#newcolor {
+    color: chartreuse;
+}
+
+h1:hover {
+    color: cadetblue;
+    text-decoration: line-through;
+    font-weight: bolder;
+}
+
