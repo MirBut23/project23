@@ -108,6 +108,11 @@ h1:hover {
     font-weight: bolder;
 }
 
+a:hover {
+    color: cadetblue;
+    font-weight: bolder;
+}
+
 
 dialog {
     padding: 1.25rem;
