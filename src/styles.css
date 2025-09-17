@@ -13,6 +13,7 @@ body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial,
         sans-serif;
     line-height: 1.5;
+    background: linear-gradient(rgb(170, 154, 154), white);
 }
 
 /* Формы: размеры, отступы, визуальный порядок */
@@ -86,7 +87,7 @@ button:hover {
 body.theme-dark {
     --color-bg: #0b0b0b;
     --color-fg: #f5f5f5;
-    --color-muted: #aaa;
+    --color-muted: #644949;
     --color-primary: #6aa2ff;
 }
 
@@ -228,14 +229,34 @@ body.theme-dark {
 
 /* Тёмные — при активной теме */
 
-:root{ 
-/* Палитра */ --color-bg:#fff; --color-fg:#0b0b0b; --color-muted:#666; --color-primary:#0a84ff; --color-danger:#b00020; 
-/* Типографика и размеры */ --font-body:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; --space-1:4px; --space-2:8px; --space-3:16px; --space-4:24px; --space-5:40px; 
-/* Скругления и тени */ --radius:12px; --shadow:0 1px 2px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.08); 
-} 
-/* Тёмная тема: переопределяем только значения токенов */ 
-body.theme-dark{ --color-bg:#0b0b0b; --color-fg:#f5f5f5; --color-muted:#aaa; --color-primary:#6aa2ff; 
+:root {
+    /* Палитра */
+    --color-bg: #fff;
+    --color-fg: #0b0b0b;
+    --color-muted: #666;
+    --color-primary: #608cb8;
+    --color-danger: #b00020;
+    /* Типографика и размеры */
+    --font-body: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 24px;
+    --space-5: 40px;
+    /* Скругления и тени */
+    --radius: 12px;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .08), 0 8px 24px rgba(0, 0, 0, .08);
 }
+
+/* Тёмная тема: переопределяем только значения токенов */
+body.theme-dark {
+    --color-bg: #0b0b0b;
+    background: linear-gradient(rgb(0, 0, 0), rgb(68, 64, 64));
+    --color-fg: #ffffff;
+    --color-muted: #ffffff;
+    --color-primary: #6aa2ff;
+}
+
 
 /* Герой-секция: затемняющий градиент поверх фонового изображения */
 .hero {
@@ -303,15 +324,27 @@ body.theme-dark{ --color-bg:#0b0b0b; --color-fg:#f5f5f5; --color-muted:#aaa; --c
     border-radius: var(--radius);
 }
 
-/* Контейнер с фиксированным соотношением сторон для <iframe>/<video> */ 
-.media{ 
-aspect-ratio: 16/9;               /* удерживаем пропорцию блока */ 
-width: min(100%, 960px);          /* не шире 960px, но адаптивен */ 
-margin-inline: auto;              /* центрируем блок */ 
-} 
-.media iframe, 
-.media video{ 
-width:100%; height:100%;          /* медиа занимает всю площадь контейнера 
-*/ 
-border:0; border-radius:var(--radius); 
-} 
+/* Контейнер с фиксированным соотношением сторон для <iframe>/<video> */
+.media {
+    aspect-ratio: 16/9;
+    /* удерживаем пропорцию блока */
+    width: min(100%, 960px);
+    /* не шире 960px, но адаптивен */
+    margin-inline: auto;
+    /* центрируем блок */
+}
+
+.media iframe,
+.media video {
+    width: 100%;
+    height: 100%;
+    /* медиа занимает всю площадь контейнера 
+*/
+    border: 0;
+    border-radius: var(--radius);
+}
+
+.Ddd {
+    font-weight: bold;
+    color: rgb(11, 121, 47);
+}
